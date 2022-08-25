@@ -10,6 +10,23 @@ const GlobalStyle = createGlobalStyle`
   *, *::after, *::before {
 	box-sizing: border-box;
   }
+
+  main {
+	background-color: #EFFAFA;
+  }
+
+  header {
+	background-image: url('./public/images/bg-header-desktop.svg')
+	height: 200p
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  p {
+    margin: 0;
+  }
 `;
 
 export default GlobalStyle;

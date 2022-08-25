@@ -8,10 +8,17 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <header className="main-header"></header>
+      <header className="main-header">
+        <picture>
+          <source srcSet="./public/images/bg-header-desktop.svg" />
+          <source srcSet="./public/images/bg-header-mobile.svg" />
+          <img src="./public/images/bg-header-mobile.svg" alt="" />
+        </picture>
+      </header>
       {jobTags ? <SearchBar /> : null}
-
-      <JobList />
+      <main>
+        <JobList />
+      </main>
     </>
   );
 }
